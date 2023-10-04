@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        /* Style for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Style for the container */
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        /* Style for the heading */
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Style for the message */
+        p {
+            margin-bottom: 20px;
+        }
+
+        /* Style for the button */
+        button {
+            padding: 12px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the button */
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Thank You!</h2>
+        <p>Your query has been submitted. Thank you for reaching out to us.</p>
+        <button onclick="redirectToContact()">Back to Contact</button>
+    </div>
+    <script>
+        function redirectToContact() {
+            window.location.href = "index.html"; // Replace with the URL of your contact page
+        }
+    </script>
+</body>
+</html>
+

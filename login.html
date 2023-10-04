@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Style for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Style for the container */
+        .container {
+            width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Style for the heading */
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Style for labels */
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Style for input fields */
+        input[type="email"],
+        input[type="password"] {
+            width: 96%;
+            padding: 10px;
+            margin: 0 auto;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+    
+        }
+
+        /* Style for the login button */
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 auto;
+        }
+
+        /* Hover effect for the login button */
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        /* Style for the "Don't have an account?" link */
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        /* Style for the link within the paragraph */
+        p a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        /* Hover effect for the link */
+        p a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="login_process.php" method="POST" onsubmit="return login();">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+    <script>
+        // Function to handle form submission
+        function login() {
+            // Replace this with your login authentication logic
+            // If login is successful, redirect to the main website
+            window.location.href = "index.html"; // Replace with your main website URL
+            return false;
+        }
+    </script>
+</body>
+</html>
+
