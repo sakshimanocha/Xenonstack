@@ -31,7 +31,7 @@ The XenonStack Company Website serves as a demonstration of my web development s
 
 - HTML
 - CSS
-- JavaScript
+- PHP
 
 ## Roadmap
 
